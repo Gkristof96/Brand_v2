@@ -4,7 +4,7 @@ import Hamburger from './HamburgerIcon'
 const Navbar = ({isMenuOpen, handleOpen}) => {
     return (
         <>
-            <nav className='navbar'>
+            <nav className={`navbar ${isMenuOpen && 'open'}`}>
                 <div className='navbar__logo'>
                     <img src='images/logo.png' alt='logo' />
                     <h1>Cross Gym</h1>
