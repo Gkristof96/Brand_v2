@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.hamburger-icon {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+.hamburger-icon .line {
+  height: 3px;
+  width: 100%;
+  border-radius: 5px;
+  background: #eee;
+  position: absolute;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.hamburger-icon .line:first-child, .hamburger-icon .line:last-child {
+  width: 15px;
+}
+
+.hamburger-icon .line:first-child {
+  top: 0;
+  left: 0;
+}
+
+.hamburger-icon .line:nth-child(2) {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.hamburger-icon .line:last-child {
+  bottom: 0;
+  right: 0;
+}
+
+.hamburger-icon.open .line:first-child {
+  -webkit-transform: translateX(2px) translateY(8px) rotate(405deg);
+          transform: translateX(2px) translateY(8px) rotate(405deg);
+}
+
+.hamburger-icon.open .line:nth-child(2) {
+  -webkit-transform: rotate(-45deg) translate(1px, -1px);
+          transform: rotate(-45deg) translate(1px, -1px);
+}
+
+.hamburger-icon.open .line:last-child {
+  -webkit-transform: translateX(-2px) translateY(-8px) rotate(405deg);
+          transform: translateX(-2px) translateY(-8px) rotate(405deg);
+}
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  background: #EB4E44;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+}
+
+.navbar__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar__logo h1 {
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #eee;
+}
+
+.navbar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+.navbar__menu .menu-item {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 0 1rem;
+}
+
+.navbar__menu .menu-item a {
+  text-decoration: none;
+  color: #eee;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar__toggle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 10px;
+  }
+  .navbar__menu {
+    display: none;
+  }
+}
+
+.sidemenu {
+  width: 100%;
+  height: 100%;
+  background: black;
+  position: fixed;
+  top: 100px;
+  right: -100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #EB4E44;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.sidemenu .menu-item {
+  padding: 1rem 2rem;
+}
+
+.sidemenu .menu-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #eee;
+}
+
+.sidemenu.open {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+@media screen and (min-width: 768px) {
+  .sidemenu {
+    display: none;
+  }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+/*# sourceMappingURL=style.css.map */

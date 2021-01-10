@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+// Color declaration
+$colors: (
+  primary: #EB4E44,
+  light: #eee,
+  text: #000,
+  light-gray: #BDBDBD,
+  dark-gray: #757575,
+);
+
+@import './components//Navbar/navbar';
+@import './components//SideMenu//sidemenu';
+
+// Functions
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
