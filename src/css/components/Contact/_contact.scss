@@ -1,0 +1,66 @@
+@import './ContactCard/contactcard';
+
+.contact {
+    min-height: 90vh;
+    width: 100%;
+    background: #000;
+    .container {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        padding: calc((90vh - 600px) /2) calc((100vw - 1200px) /2);
+
+        .contact-info {
+            h1 {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+
+                color: #EB4E44;
+                margin-bottom: 10px;
+            }
+            
+            h2 {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 44px;
+
+                color: #EEEEEE;
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 22px;
+                
+                color: #EEEEEE;            
+                margin-bottom: 25px;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 29px;
+
+                    color: #EEEEEE;
+                    margin-bottom: 25px;
+                    .icon {
+                        margin-right: 10px;
+                        color: #eee;
+                        &:hover {
+                            color: #EB4E44;
+                        }
+                    }
+                }
+
+            };
+        }
+    }
+}
