@@ -9,9 +9,10 @@ $colors: (
   dark-gray: #757575,
 );
 
-@import './components//Navbar/navbar';
-@import './components//SideMenu//sidemenu';
-@import './components//Hero/hero';
+@import './components/Navbar/navbar';
+@import './components/SideMenu//sidemenu';
+@import './components/Hero/hero';
+@import './components/Services/services';
 
 // Functions
 @function color($color-name) {
