@@ -13,6 +13,8 @@ $colors: (
 @import './components/SideMenu//sidemenu';
 @import './components/Hero/hero';
 @import './components/Services/services';
+@import './components//Trainers/trainers';
+@import './components/Prices/prices';
 
 // Functions
 @function color($color-name) {
