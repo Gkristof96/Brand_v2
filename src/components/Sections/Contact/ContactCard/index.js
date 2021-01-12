@@ -43,7 +43,7 @@ const ContactCard = () => {
                 <form onSubmit={handleSubmit}>
                     <div className='input-group'>
                         <label>Name</label>
-                        <input type="text" name='name' placeholder='Sebastion Montgomeri' value={values.name} handleChange={handleChange}/>
+                        <input type="text" name='name' placeholder='Sebastion Montgomeri' value={values.name} onChange={handleChange}/>
                     </div>
                     {errors.name && 
                         <p className='error-message'>
@@ -53,7 +53,7 @@ const ContactCard = () => {
                     }
                     <div className='input-group'>
                         <label>Email</label>
-                        <input type="email" name='email' placeholder='sebastion@mail.com' value={values.email} handleChange={handleChange}/>
+                        <input type="email" name='email' placeholder='sebastion@mail.com' value={values.email} onChange={handleChange}/>
                     </div>
                     {errors.email && 
                         <p className='error-message'>
@@ -62,8 +62,8 @@ const ContactCard = () => {
                         </p>
                     }
                     <div className='input-group'>
-                        <label>Name</label>
-                        <textarea name='message' value={values.message} handleChange={handleChange}/>
+                        <label>Message</label>
+                        <textarea name='message' value={values.message} onChange={handleChange}/>
                     </div>
                     {errors.message && 
                         <p className='error-message'>

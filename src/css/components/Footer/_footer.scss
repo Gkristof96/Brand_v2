@@ -80,3 +80,31 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    footer {
+        height: auto;
+        .container {
+            grid-template-columns: 1fr;
+            grid-template-rows: 3fr 2fr 1fr;
+            .copyright {
+                grid-row: 3/4;
+                grid-template-columns: 1/2;
+            }
+            .logo {
+                margin-top: 25px;
+                grid-row: 1/2;
+                grid-template-columns: 1/2;
+                align-self: center;
+                justify-self: center;
+            }
+
+            .social-icons {
+                grid-row: 2/3;
+                grid-template-columns: 1/2;
+                align-self: center;
+                justify-self: center;
+            }
+        }
+    }
+}

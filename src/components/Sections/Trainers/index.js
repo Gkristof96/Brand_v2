@@ -10,12 +10,13 @@ const Trainers = () => {
                         <h1>Our Trainers</h1>
                         <p>Meet our trainers, who has a lot year experiment is personal trainings</p>
                     </div>
-                    <div className='trainers-container'>
+                    <div className='trainers-cards'>
                         <TrainerCard image={'images/trainer_1.jpg'} name={'Thomas Adam'} description={'Crossfit specialist'}/>
                         <TrainerCard image={'images/trainer_2.jpg'} name={'Rebecca Angels'} description={'Street Workout Trainer'}/>
                         <TrainerCard image={'images/trainer_3.jpg'} name={'Jacob Smith'} description={'Body Building Coach'}/>
                     </div>
                 </div>
+                <img className='triangle' src='images/vector_2.svg' alt='vector' />
             </section>
         </>
     )

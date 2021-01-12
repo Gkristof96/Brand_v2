@@ -18,7 +18,7 @@ const Navbar = ({isMenuOpen, handleOpen}) => {
     },[])
     return (
         <>
-            <nav className={`navbar ${isMenuOpen && 'open'}`}>
+            <nav className={`navbar ${(isMenuOpen || scroll) && 'open'}`}>
                 <div className='navbar__logo'>
                     <img src='images/logo_3.png' alt='logo' />
                     <h1>Cross Gym</h1>

@@ -19,6 +19,7 @@ const Contact = () => {
                         </ul>
                     </div>
                 </div>
+                <img className='triangle' src='images/vector_3.svg' alt='vector' />
             </section>
         </>
     )

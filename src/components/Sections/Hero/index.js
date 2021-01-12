@@ -9,6 +9,7 @@ const Hero = () => {
                     <h2>Where the <span>yourney</span> begins</h2>
                     <button>See more</button>
                 </div>
+                <img className='triangle' src='images/vector_2.svg' alt='vector' />
             </section>
         </>
     )

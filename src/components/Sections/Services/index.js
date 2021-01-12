@@ -10,7 +10,7 @@ const Services = () => {
         <>
             <section className='services section' id='services'>
                 <div className='container'>
-                    <div className='left-bar'>
+                    <div className='services-info'>
                         <h1>Services</h1>
                         <h2>What we offer</h2>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
