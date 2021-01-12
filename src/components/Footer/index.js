@@ -7,10 +7,10 @@ const Footer = () => {
             <footer>
                 <div className='container'>
                     <div className='logo'>
-                        <div className='logo__brand'>
+                        <a href='#hero' className='logo__brand'>
                             <img src='images/logo_3.png' alt='logo' />
                             <h1>Cross Gym</h1>
-                        </div>
+                        </a>
                         <h2>If you want to <span>change</span></h2>
                     </div>
                     <div className='social-icons'>

@@ -1,13 +1,13 @@
 @import './TrainerCard/trainercard';
 
 .trainers {
-    min-height: 90vh;
+    min-height: 100vh;
     width: 100%;
     background: #000;
     .container {
         display: grid;
         grid-template-rows: 2fr auto;
-        padding: calc((90vh - 600px) /2) calc((100vw - 1200px) /2);
+        padding: calc((100vh - 600px) /2) calc((100vw - 1200px) /2);
 
         .title {
             justify-self: center;
@@ -44,7 +44,7 @@
 
                 color: #EEEEEE;
 
-                margin-bottom: 25px;
+                margin-bottom: 50px;
             }
         }
         .trainers-container {

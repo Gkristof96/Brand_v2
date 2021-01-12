@@ -4,7 +4,7 @@ import PriceCard from './PriceCard'
 const Prices = () => {
     return (
         <>
-            <section className='prices section'>
+            <section className='prices section' id='prices'>
                 <div className='container'>
                     <div className='texts'>
                         <h1>Prices</h1>

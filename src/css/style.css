@@ -80,7 +80,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 0.5rem calc((100vw - 1200px) / 2);
-  position: fixed;
+  position: absolute;
   z-index: 10;
   top: 0;
   left: 0;
@@ -439,7 +439,7 @@
 }
 
 .trainers {
-  min-height: 90vh;
+  min-height: 100vh;
   width: 100%;
   background: #000;
 }
@@ -449,7 +449,7 @@
   display: grid;
   -ms-grid-rows: 2fr auto;
       grid-template-rows: 2fr auto;
-  padding: calc((90vh - 600px) /2) calc((100vw - 1200px) /2);
+  padding: calc((100vh - 600px) /2) calc((100vw - 1200px) /2);
 }
 
 .trainers .container .title {
@@ -490,7 +490,7 @@
   font-size: 18px;
   line-height: 22px;
   color: #EEEEEE;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 .trainers .container .trainers-container {
@@ -551,7 +551,7 @@
 }
 
 .prices {
-  min-height: 90vh;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -560,7 +560,7 @@
   display: grid;
   -ms-grid-rows: 2fr auto;
       grid-template-rows: 2fr auto;
-  padding: calc((90vh - 600px) /2) calc((100vw - 1200px) /2);
+  padding: calc((100vh - 600px) /2) calc((100vw - 1200px) /2);
 }
 
 .prices .container .texts h1 {
@@ -609,7 +609,7 @@
   height: 500px;
   background: #EEEEEE;
   border-radius: 5px;
-  padding: 30px;
+  padding: 15px 30px;
 }
 
 .contact-card h1 {
@@ -633,6 +633,7 @@
       -ms-flex-align: center;
           align-items: center;
   color: #757575;
+  margin-bottom: 10px;
 }
 
 .contact-card form {
@@ -712,7 +713,7 @@
 }
 
 .contact {
-  min-height: 90vh;
+  min-height: 100vh;
   width: 100%;
   background: #000;
 }
@@ -723,7 +724,7 @@
   -ms-grid-columns: 40% 60%;
       grid-template-columns: 40% 60%;
   grid-column-gap: 10px;
-  padding: calc((90vh - 500px) /2) calc((100vw - 1200px) /2);
+  padding: calc((100vh - 500px) /2) calc((100vw - 1200px) /2);
 }
 
 .contact .container .contact-info h1 {
@@ -803,6 +804,7 @@ footer .container .logo__brand {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
 }
 
 footer .container .logo__brand img {

@@ -4,7 +4,7 @@ import TrainerCard from './TrainerCard'
 const Trainers = () => {
     return (
         <>
-            <section className='trainers section'>
+            <section className='trainers section' id='trainers'>
                 <div className='container'>
                     <div className='title'>
                         <h1>Our Trainers</h1>

@@ -8,7 +8,7 @@ import { AiFillSafetyCertificate } from 'react-icons/ai'
 const Services = () => {
     return (
         <>
-            <section className='services section'>
+            <section className='services section' id='services'>
                 <div className='container'>
                     <div className='left-bar'>
                         <h1>Services</h1>

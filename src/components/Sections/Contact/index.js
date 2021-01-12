@@ -5,7 +5,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt} from 'react-icons/fa'
 const Contact = () => {
     return (
         <>
-            <section className='contact section'>
+            <section className='contact section' id='contact'>
                 <div className='container'>
                     <ContactCard />
                     <div className='contact-info'>

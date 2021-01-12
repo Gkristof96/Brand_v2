@@ -1,14 +1,14 @@
 @import './ContactCard/contactcard';
 
 .contact {
-    min-height: 90vh;
+    min-height: 100vh;
     width: 100%;
     background: #000;
     .container {
         display: grid;
         grid-template-columns: 40% 60%;
         grid-column-gap: 10px;
-        padding: calc((90vh - 500px) /2) calc((100vw - 1200px) /2);
+        padding: calc((100vh - 500px) /2) calc((100vw - 1200px) /2);
 
         .contact-info {
             h1 {
