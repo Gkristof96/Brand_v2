@@ -1,8 +1,8 @@
 .contact-card {
     align-self: center;
     justify-self: center;
-    width: 80%;
-    height: 500px;
+    width: 85%;
+    height: 600px;
 
     background: #EEEEEE;
     border-radius: 5px;
@@ -83,6 +83,14 @@
             line-height: 29px;
 
             color: #FFFFFF;
+        }
+
+        .error-message {
+            color: #EB4E44;
+            align-self: self-start;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
         }
     }
 }
