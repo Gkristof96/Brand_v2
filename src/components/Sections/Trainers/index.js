@@ -1,5 +1,6 @@
 import React from 'react'
 import TrainerCard from './TrainerCard'
+import { trainerData } from '../../../data/TrainersData'
 
 const Trainers = () => {
     return (
@@ -11,9 +12,9 @@ const Trainers = () => {
                         <p>Meet our trainers, who has a lot year experiment is personal trainings</p>
                     </div>
                     <div className='trainers-cards'>
-                        <TrainerCard image={'images/trainer_1.jpg'} name={'Thomas Adam'} description={'Crossfit specialist'}/>
-                        <TrainerCard image={'images/trainer_2.jpg'} name={'Rebecca Angels'} description={'Street Workout Trainer'}/>
-                        <TrainerCard image={'images/trainer_3.jpg'} name={'Jacob Smith'} description={'Body Building Coach'}/>
+                        {trainerData.map((data,i) => (
+                            <TrainerCard key={i} image={data.image} name={data.name} description={data.section} />
+                        ))}
                     </div>
                 </div>
                 <img className='triangle' src='images/vector_2.svg' alt='vector' />

@@ -8,7 +8,6 @@
     .container {
         display: grid;
         grid-template-columns: 40% 60%;
-        grid-column-gap: 10px;
         padding: calc((100vh - 600px) /2) calc((100vw - 1200px) /2);
 
         .contact-info {
@@ -51,7 +50,7 @@
                 li {
                     font-style: normal;
                     font-weight: 600;
-                    font-size: clamp(0.8rem,5vw,1.3rem);
+                    font-size: clamp(0.5rem,3vw,1.3rem);
                     line-height: 29px;
                     display: flex;
                     align-items: center;
@@ -68,7 +67,7 @@
                     }
                 }
 
-            };
+            }
         }
     }
 }

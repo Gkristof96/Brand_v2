@@ -3,21 +3,19 @@
     width: 100%;
     .container {
         display: grid;
-        grid-template-columns: 45% 15% 40%;
+        grid-template-columns: 50% 50%;
         padding: calc((100vh - 550px) /2) calc((100vw - 1200px) /2);
 
         img {
-            grid-column: 3/4;
             height: 550px;
             border-radius: 5px;
             justify-self: center;
-            align-self: center;
         }
     
         .services-info{
             display: flex;
             flex-direction: column;
-    
+            padding-right: 25px;
             h1 {
                 font-style: normal;
                 font-weight: 600;
@@ -55,7 +53,7 @@
                     font-family: Montserrat;
                     font-style: normal;
                     font-weight: 600;
-                    font-size: clamp(0.8rem,5vw,1.3rem);
+                    font-size: clamp(0.8rem,2.5vw,1.3rem);
                     line-height: 22px;
                     display: flex;
                     align-items: center;
@@ -77,9 +75,11 @@
         .container {
             grid-template-columns: 1fr;
             padding: 50px 25px;
-
+            .services-info {
+                padding-right: 0;
+            }
             img {
-                display: none;
+                max-width: 290px;
             }
         }
     }

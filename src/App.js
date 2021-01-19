@@ -8,16 +8,17 @@ import Trainers from './components/Sections/Trainers'
 import Prices from './components/Sections/Prices'
 import Contact from './components/Sections/Contact';
 import Footer from './components/Footer'
+import { sectionData } from './data/SectionData'
 
 function App() {
   return (
     <>
       <Header />
       <Hero />
-      <Services />
+      <Services data={sectionData[0]}/>
       <Trainers />
-      <Prices />
-      <Contact />
+      <Prices data={sectionData[1]}/>
+      <Contact data={sectionData[2]}/>
       <Footer />
     </>
   );

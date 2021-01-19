@@ -7,9 +7,9 @@ const Header = () => {
 
     const handleOpen = () => setMenuOpen(!isMenuOpen)
     return (
-        <>
-            <Navbar handleOpen={handleOpen} isMenuOpen={isMenuOpen}/>
-            <SideMenu isMenuOpen={isMenuOpen} handleOpen={handleOpen}/>
+        <>  
+                <Navbar handleOpen={handleOpen} isMenuOpen={isMenuOpen}/>
+                <SideMenu isMenuOpen={isMenuOpen} handleOpen={handleOpen}/>
         </>
     )
 }
