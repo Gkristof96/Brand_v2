@@ -44,26 +44,26 @@
                 font-size: clamp(1rem,8vw,3.5rem);
             }
         }
-        button {
+        .btn-container {
             grid-row: 3/4;
             grid-column: 1/2;
 
-            background: #eb4e44;
-            border-radius: 10px;
-            width: 250px;
-            height: 50px;
-            color: #eee;
-            border: none;
-            outline: none;
             align-self: center;
-            cursor: pointer;
+            a {
+                background: #eb4e44;
+                border-radius: 10px;
+                padding: 15px 50px;
+                color: #eee;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
         }   
     }
 }
 
 @media screen and (max-width: 768px) {
     .hero {
-        height: auto;
         .container {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 2fr;

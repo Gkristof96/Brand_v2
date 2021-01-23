@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-scroll'
 
 const header = {
     hidden: {
@@ -38,6 +39,7 @@ const button = {
     visible: {
         opacity: 1,
         x: '0',
+        originX: 0,
         transition: {
             type: 'spring',
             duration: 1,
@@ -61,14 +63,15 @@ const Hero = () => {
                         initial='hidden'
                         animate='visible'
                     >Where the <span>yourney</span> begins</motion.h2>
-                    <motion.button
+                    <motion.div
+                        className='btn-container'
                         variants={button}
                         initial='hidden'
                         animate='visible'
                         whileHover={{scale: 1.1}}
-                        whileTap={{scale: 1, background: 'white', color: 'black'}}
                     >
-                    See more</motion.button>
+                        <Link to='services' smooth={true} duration={500} spy={true} exact="true" >See more</Link>
+                    </motion.div>
                 </div>
                 <img className='triangle' src='images/vector_2.svg' alt='vector' />
             </section>

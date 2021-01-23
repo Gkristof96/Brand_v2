@@ -1,4 +1,5 @@
 @import './ContactCard/contactcard';
+@import './Modal/modal';
 
 .contact {
     min-height: 100vh;
@@ -78,6 +79,10 @@
             padding: 50px 25px;
             grid-template-columns: 1fr;
             grid-row-gap: 25px;
+            .contactcard {
+                justify-self: center;
+                grid-row: 2/3;
+            }
         }
     }
 }

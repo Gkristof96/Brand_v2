@@ -1,13 +1,12 @@
 import React from 'react'
+import { navbarData } from '../../../data/navbar'
+import { Link } from 'react-scroll'
 
 const SideMenu = ({isMenuOpen, handleOpen}) => {
     return (
         <>
             <ul className={`sidemenu ${isMenuOpen && 'open'}`} onClick={handleOpen}>
-                    <li className='menu-item'><a href='#services'>Services</a></li>
-                    <li className='menu-item'><a href='#trainers'>Trainers</a></li>
-                    <li className='menu-item'><a href='#prices'>Prices</a></li>
-                    <li className='menu-item'><a href='#contact'>Contact</a></li>
+                {navbarData.map((data,i) => ( <li key={i}><Link onClick={handleOpen} smooth={true} duration={500} spy={true} exact="true" to={data.path}>{data.title}</Link></li>))}
             </ul>
         </>
     )

@@ -15,6 +15,7 @@ function App() {
     <>
       <Header />
       <Hero />
+      <div className='filler' />
       <Services data={sectionData[0]}/>
       <Trainers />
       <Prices data={sectionData[1]}/>

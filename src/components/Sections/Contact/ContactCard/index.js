@@ -4,7 +4,7 @@ import useInput from '../../../../hooks/useInput'
 import { FaExclamationTriangle } from 'react-icons/fa'
 import axios from 'axios'
 
-const ContactCard = () => {
+const ContactCard = ({handleOpen}) => {
     // állapot az inputok tárolására
     const [values, setValues] = useState({
         email: '',
@@ -13,20 +13,8 @@ const ContactCard = () => {
     });
     // Adatok küldése a szervernek
     const saveData = () => {
-        axios
-        .post("url", {
-            message: {
-            name: values.name,
-            email: values.email,
-            message: values.message,
-            },
-        })
-        .then((response) => {
-            console.log("elküldve", response);
-        })
-        .catch((error) => {
-            console.log(error);
-        });
+        console.log(values)
+        handleOpen();
     };
     // saját horog hívása
     const { handleChange, handleSubmit, errors } = useInput(
@@ -63,7 +51,7 @@ const ContactCard = () => {
                     }
                     <div className='input-group'>
                         <label>Message</label>
-                        <textarea name='message' value={values.message} onChange={handleChange}/>
+                        <textarea name='message' value={values.message} onChange={handleChange} data-gramm_editor="false"/>
                     </div>
                     {errors.message && 
                         <p className='error-message'>

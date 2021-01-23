@@ -1,42 +1,42 @@
-import React from 'react'
-import { IoBarbell, IoBicycleSharp } from 'react-icons/io5'
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import SectionText from '../../SectionText'
-import { FaWeight } from 'react-icons/fa'
-import { BiArea } from 'react-icons/bi'
-import { AiFillSafetyCertificate } from 'react-icons/ai'
-import { motion } from 'framer-motion'
-
-const image = {
-    hidden: {
-        y: '100px'
-    },
-    visible: {
-        y: 0,
-        transition: {
-            duration: 1
-        }
-    }
-}
+import { serviceData } from '../../../data/services'
+import { containerVariants } from '../../../animations/animation'
+import ListItem from '../Contact/ListItem'
+import { imageVariants } from '../../../animations/animation'
 
 const Services = ({data}) => {
+    const controls = useAnimation();
+    const { ref, inView } = useInView();
+
+    useEffect(() => {
+        if (inView) {
+          controls.start('visible');
+        }
+        if (!inView) {
+          controls.start('hidden');
+        }
+    }, [controls, inView]);
     return (
         <>
-            <section className='services section' id='services'>
+            <section ref={ref} className='services section' id='services'>
                 <div className='container'>
                     <div className='services-info'>
-                        <SectionText data={data}/>
-                        <ul>
-                            <li><IoBarbell className='icon'/>Premium gym equipment</li>
-                            <li><IoBicycleSharp className='icon'/>Cardio area</li>
-                            <li><FaWeight className='icon'/>Body weight loss trainings</li>
-                            <li><BiArea className='icon'/>Large working area</li>
-                            <li><AiFillSafetyCertificate className='icon'/>Professional trainers</li>
-                        </ul>
+                        <SectionText data={data} controls={controls}/>
+                        <motion.ul
+                                variants={containerVariants}
+                                initial="hidden"
+                                animate={controls}
+                        >
+                                {serviceData.map((data,i) => ( <ListItem key={i} info={data.info} icon={data.icon} />))}
+                        </motion.ul>
                     </div>
                     <motion.img src='images/services.jpg' alt='services' 
-                        variants={image}
+                        variants={imageVariants}
                         initial='hidden'
-                        animate='visible'
+                        animate={controls}
                     />
                 </div>
             </section>

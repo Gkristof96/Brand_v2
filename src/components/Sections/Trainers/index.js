@@ -1,15 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import TrainerCard from './TrainerCard'
 import { trainerData } from '../../../data/TrainersData'
+import { titleVariants_1, textVariants } from '../../../animations/animation'
 
 const Trainers = () => {
+    const controls = useAnimation();
+    const { ref, inView } = useInView();
+
+    useEffect(() => {
+        if (inView) {
+          controls.start('visible');
+        }
+        if (!inView) {
+          controls.start('hidden');
+        }
+    }, [controls, inView]);
     return (
         <>
-            <section className='trainers section' id='trainers'>
+            <section ref={ref} className='trainers section' id='trainers'>
                 <div className='container'>
                     <div className='title'>
-                        <h1>Our Trainers</h1>
-                        <p>Meet our trainers, who has a lot year experiment is personal trainings</p>
+                        <motion.h1 initial="hidden" animate={controls} variants={titleVariants_1}>Our Trainers</motion.h1>
+                        <motion.p  initial="hidden" animate={controls} variants={textVariants}>Meet our trainers, who has a lot year experiment is personal trainings</motion.p>
                     </div>
                     <div className='trainers-cards'>
                         {trainerData.map((data,i) => (

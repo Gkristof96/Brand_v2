@@ -1,21 +1,46 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import ContactCard from './ContactCard'
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt} from 'react-icons/fa'
+import { contactData } from '../../../data/contactinfo'
 import SectionText from '../../SectionText'
-
+import { containerVariants, cardVariants } from '../../../animations/animation'
+import ListItem from './ListItem'
+import Modal from './Modal'
+ 
 const Contact = ({data}) => {
+    const [modalOpen,setModelOpen] = useState(false)
+    const controls = useAnimation();
+    const { ref, inView } = useInView();
+
+    useEffect(() => {
+        if (inView) {
+          controls.start('visible');
+        }
+        if (!inView) {
+          controls.start('hidden');
+        }
+    }, [controls, inView]);
+
+    const handleOpen = () => setModelOpen(!modalOpen)
+
     return (
         <>
-            <section className='contact section' id='contact'>
+            <Modal modalOpen={modalOpen} handleOpen={handleOpen}/>
+            <section ref={ref} className='contact section' id='contact'>
                 <div className='container'>
-                    <ContactCard />
+                    <motion.div initial="hidden" animate={controls} variants={cardVariants}  className='contactcard'>
+                        <ContactCard handleOpen={handleOpen}/>
+                    </motion.div>
                     <div className='contact-info'>
-                        <SectionText data={data}/>
-                        <ul>
-                            <li><FaPhoneAlt className='icon'/>+36 92 123 456</li>
-                            <li><FaEnvelope className='icon'/>crossgym@crossgym.com</li>
-                            <li><FaMapMarkerAlt className='icon'/>Budapest, Kossuth u. 23 1151</li>
-                        </ul>
+                        <SectionText data={data} controls={controls}/>
+                        <motion.ul
+                                variants={containerVariants}
+                                initial="hidden"
+                                animate={controls}
+                        >
+                                {contactData.map((data,i) => ( <ListItem key={i} info={data.info} icon={data.icon} />))}
+                        </motion.ul>
                     </div>
                 </div>
                 <img className='triangle' src='images/vector_3.svg' alt='vector' />
