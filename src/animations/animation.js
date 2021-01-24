@@ -233,3 +233,30 @@ export const priceVariants = {
         opacity: 1,
     }
 }
+
+export const modalVariants = {
+    hidden: {
+        opacity: 0,
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            duration: 1
+        }
+    }
+}
+
+export const messageVariants = {
+    hidden: {
+        y: -250,
+        opacity: 0,
+    },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            delay: 1,
+            duration: 0.5
+        }
+    }
+}

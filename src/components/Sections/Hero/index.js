@@ -68,7 +68,6 @@ const Hero = () => {
                         variants={button}
                         initial='hidden'
                         animate='visible'
-                        whileHover={{scale: 1.1}}
                     >
                         <Link to='services' smooth={true} duration={500} spy={true} exact="true" >See more</Link>
                     </motion.div>

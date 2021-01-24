@@ -15,10 +15,13 @@ function App() {
     <>
       <Header />
       <Hero />
-      <div className='filler' />
+      <div className='filler light' />
       <Services data={sectionData[0]}/>
+      <div className='filler dark' />
       <Trainers />
+      <div className='filler light' />
       <Prices data={sectionData[1]}/>
+      <div className='filler dark' />
       <Contact data={sectionData[2]}/>
       <Footer />
     </>

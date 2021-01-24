@@ -25,19 +25,19 @@ const Services = ({data}) => {
                 <div className='container'>
                     <div className='services-info'>
                         <SectionText data={data} controls={controls}/>
-                        <motion.ul
+                            <motion.ul
                                 variants={containerVariants}
                                 initial="hidden"
                                 animate={controls}
-                        >
+                            >
                                 {serviceData.map((data,i) => ( <ListItem key={i} info={data.info} icon={data.icon} />))}
-                        </motion.ul>
-                    </div>
-                    <motion.img src='images/services.jpg' alt='services' 
-                        variants={imageVariants}
-                        initial='hidden'
-                        animate={controls}
-                    />
+                            </motion.ul>
+                        </div>
+                        <motion.img src='images/services.jpg' alt='services' 
+                            variants={imageVariants}
+                            initial='hidden'
+                            animate={controls}
+                        />
                 </div>
             </section>
         </>

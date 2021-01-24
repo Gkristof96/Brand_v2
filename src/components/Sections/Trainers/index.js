@@ -27,7 +27,7 @@ const Trainers = () => {
                     </div>
                     <div className='trainers-cards'>
                         {trainerData.map((data,i) => (
-                            <TrainerCard key={i} image={data.image} name={data.name} description={data.section} />
+                            <TrainerCard controls={controls} key={i} image={data.image} name={data.name} description={data.section} />
                         ))}
                     </div>
                 </div>
