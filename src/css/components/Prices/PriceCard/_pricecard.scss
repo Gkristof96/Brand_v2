@@ -3,8 +3,8 @@
     width: 100%;
     height: auto;
     max-height: 350px;
-    background: #FFFFFF;
-    border: 5px solid #EB4E44;
+    background: color(light);
+    border: 5px solid color(primary);
     border-radius: 20px;
 
     display: flex;
@@ -18,7 +18,7 @@
         font-size: clamp(1.5rem,5vw,1.8rem);
         line-height: 44px;
         text-transform: uppercase;
-        color: #000000;
+        color: color(Dark);
 
         margin-bottom: 5px;
     }
@@ -29,7 +29,7 @@
         font-size: clamp(0.8rem,4vw,1.3rem);
         line-height: 29px;
 
-        color: #000000;
+        color: color(dark);
     }
 
     p {
@@ -39,7 +39,7 @@
         text-align: center;
         line-height: 17px;
 
-        color: #757575;
+        color: color(dark-gray);
 
         margin: 5px 0;
     }

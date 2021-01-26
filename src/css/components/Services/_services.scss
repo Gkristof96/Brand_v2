@@ -22,7 +22,7 @@
                 font-size: clamp(1rem,8vw,1.3rem);
                 line-height: 29px;
     
-                color: #EB4E44;
+                color: color(primary);
     
                 margin-bottom: 10px;
             }
@@ -33,7 +33,7 @@
                 font-size: clamp(1.3rem,8vw,2rem);
                 line-height: 44px;
     
-                color: #000000;
+                color: color(dark);
                 margin-bottom: 25px;
             }
     
@@ -44,7 +44,7 @@
                 line-height: 22px;
                 text-align: justify;
     
-                color: #757575;
+                color: color(dark-gray);
                 margin-bottom: 15px;
             }
             ul {
@@ -59,7 +59,7 @@
                     align-items: center;
                     margin-bottom: 25px;
     
-                    color: #000000;
+                    color: color(dark);
                     .icon {
                         font-size: clamp(1.3rem,5vw,2rem);
                         margin-right: 5px;

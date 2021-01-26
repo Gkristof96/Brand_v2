@@ -4,10 +4,15 @@
 $colors: (
   primary: #EB4E44,
   light: #eee,
-  text: #000,
+  dark: #000,
   light-gray: #BDBDBD,
   dark-gray: #757575,
+  darkest-gray: #212121,
 );
+// Functions
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
 
 @import './components/Navbar/navbar';
 @import './components/SideMenu//sidemenu';
@@ -17,11 +22,6 @@ $colors: (
 @import './components/Prices/prices';
 @import './components/Contact/contact';
 @import './components/Footer/footer';
-
-// Functions
-@function color($color-name) {
-  @return map-get($colors, $color-name);
-}
 
 body {
     font-family: 'Montserrat', sans-serif;

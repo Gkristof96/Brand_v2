@@ -1,6 +1,6 @@
 footer {
     height: 150px;
-    background: #BDBDBD;
+    background: color(light-gray);
     .container {
         padding: 0 calc((100vw - 1200px) /2);
         display: grid;
@@ -26,7 +26,7 @@ footer {
                     font-size: 36px;
                     line-height: 44px;
 
-                    color: #eee;
+                    color: color(light);
                 }
             }
             h2 {
@@ -35,9 +35,9 @@ footer {
                 font-size: 24px;
                 line-height: 29px;
 
-                color: #eee;
+                color: color(light);
                 span {
-                    color: #EB4E44;
+                    color: color(primary);
                     font-weight: 600;
                     font-size: 24px;
                     line-height: 29px;
@@ -50,12 +50,12 @@ footer {
             justify-self: flex-end;
             .icon {
                 font-size: 2rem;
-                color: #eee;
+                color: color(light);
                 margin-left: 5px;
                 cursor: pointer;
                 transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
                 &:hover {
-                    color: #EB4E44;
+                    color: color(primary);
                     transform: translateY(-3px);
                 }
             }
@@ -72,7 +72,7 @@ footer {
             text-align: center;
             align-self: center;
 
-            color: #757575;
+            color: color(light-gray);
             position: relative;
 
             &::before {

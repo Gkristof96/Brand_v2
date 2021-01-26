@@ -26,7 +26,7 @@
             font-size: clamp(3rem,8vw,5.3rem);
             font-style: normal;
             font-weight: bold;
-            color: #eee;
+            color: color(light);
             align-self: center;
         }
         h2 {
@@ -35,10 +35,10 @@
 
             font-weight: bold;
             font-size: clamp(1rem,8vw,3.5rem);
-            color: #eee;
+            color: color(light);
             align-self: center;
             span {
-                color: #EB4E44;
+                color: color(primary);
                 font-weight: bold;
                 font-size: clamp(1rem,8vw,3.5rem);
             }
@@ -49,10 +49,10 @@
 
             align-self: center;
             a {
-                background: #eb4e44;
+                background: color(primary);
                 border-radius: 10px;
                 padding: 15px 50px;
-                color: #eee;
+                color: color(light);
                 border: none;
                 outline: none;
                 cursor: pointer;

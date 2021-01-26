@@ -12,12 +12,12 @@
     .message-container {
         width: 400px;
         height: 200px;
-        background: white;
+        background: color(light);
         padding: 10px;
         box-shadow: 0 0 15px 0 rgba(0,0,0,0.5);
         .content {
             height: 100%;
-            border: 1px solid #EB4E44;
+            border: 1px solid color(primary);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -29,12 +29,12 @@
             }
             h1 {
                 font-size: 1rem;
-                color: #212121;
+                color: color(darkest-gray);
                 margin-bottom: 15px;
             }
             .icon {
                 cursor: pointer;
-                color: #EB4E44;
+                color: color(primary);
                 font-size: 0.8rem;
                 position: absolute;
                 top: 15px;

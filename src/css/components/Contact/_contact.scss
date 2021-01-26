@@ -4,7 +4,7 @@
 .contact {
     min-height: 100vh;
     width: 100%;
-    background: #000;
+    background: color(dark);
     position: relative;
     .container {
         display: grid;
@@ -20,7 +20,7 @@
                 font-size: clamp(1rem,8vw,1.3rem);
                 line-height: 29px;
 
-                color: #EB4E44;
+                color: color(primary);
                 margin-bottom: 10px;
             }
             
@@ -30,7 +30,7 @@
                 font-size: clamp(1.3rem,8vw,2rem);
                 line-height: 44px;
 
-                color: #EEEEEE;
+                color: color(light);
                 margin-bottom: 25px;
             }
 
@@ -40,7 +40,7 @@
                 font-size: clamp(0.7rem,5vw,1rem);
                 line-height: 22px;
                 
-                color: #EEEEEE;            
+                color: color(light);            
                 margin-bottom: 25px;
                 text-align: justify;
             }
@@ -56,14 +56,14 @@
                     display: flex;
                     align-items: center;
 
-                    color: #EEEEEE;
+                    color: color(light);
                     margin-bottom: 25px;
                     .icon {
                         font-size: clamp(1.3rem,5vw,2rem);
                         margin-right: 10px;
-                        color: #eee;
+                        color: color(light);
                         &:hover {
-                            color: #EB4E44;
+                            color: color(primary);
                         }
                     }
                 }
