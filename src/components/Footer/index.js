@@ -9,6 +9,7 @@ const Footer = () => {
     const controls = useAnimation();
     const { ref, inView } = useInView();
 
+    //animation control
     useEffect(() => {
         if (inView) {
           controls.start('visible');
@@ -17,6 +18,7 @@ const Footer = () => {
           controls.start('hidden');
         }
     }, [controls, inView]);
+
     return (
         <>
             <footer ref={ref}>

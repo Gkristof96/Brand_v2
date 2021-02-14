@@ -10,7 +10,8 @@ import { imageVariants } from '../../../animations/animation'
 const Services = ({data}) => {
     const controls = useAnimation();
     const { ref, inView } = useInView();
-
+    
+    //animation control
     useEffect(() => {
         if (inView) {
           controls.start('visible');

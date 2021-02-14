@@ -3,7 +3,7 @@ import validate from '../../../../hooks/validateMessage'
 import useInput from '../../../../hooks/useInput'
 import { FaExclamationTriangle } from 'react-icons/fa'
 
-const ContactCard = ({handleOpen}) => {
+const ContactCard = ({sendModal}) => {
     // állapot az inputok tárolására
     const [values, setValues] = useState({
         email: '',
@@ -13,7 +13,7 @@ const ContactCard = ({handleOpen}) => {
     // Adatok küldése a szervernek
     const saveData = () => {
         console.log(values)
-        handleOpen();
+        sendModal();
     };
     // saját horog hívása
     const { handleChange, handleSubmit, errors } = useInput(

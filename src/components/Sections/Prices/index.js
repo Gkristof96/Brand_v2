@@ -9,7 +9,8 @@ import { containerVariants } from '../../../animations/animation'
 const Prices = ({data}) => {
     const controls = useAnimation();
     const { ref, inView } = useInView();
-
+    
+    //animation control
     useEffect(() => {
         if (inView) {
           controls.start('visible');

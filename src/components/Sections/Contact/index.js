@@ -12,7 +12,8 @@ const Contact = ({data}) => {
     const [modalOpen,setModelOpen] = useState(false)
     const controls = useAnimation();
     const { ref, inView } = useInView();
-
+    
+    //animation control
     useEffect(() => {
         if (inView) {
           controls.start('visible');
@@ -22,15 +23,15 @@ const Contact = ({data}) => {
         }
     }, [controls, inView]);
 
-    const handleOpen = () => setModelOpen(!modalOpen)
+    const sendModal = () => setModelOpen(!modalOpen)
 
     return (
         <>
-            <Modal modalOpen={modalOpen} handleOpen={handleOpen}/>
+            <Modal modalOpen={modalOpen} sendModal={sendModal}/>
             <section ref={ref} className='contact section' id='contact'>
                 <div className='container'>
                     <motion.div initial="hidden" animate={controls} variants={cardVariants}  className='contactcard'>
-                        <ContactCard handleOpen={handleOpen}/>
+                        <ContactCard sendModal={sendModal}/>
                     </motion.div>
                     <div className='contact-info'>
                         <SectionText data={data} controls={controls}/>

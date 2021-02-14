@@ -24,6 +24,53 @@ export const navbarVariants = {
     }
 }
 // hero animations
+
+export const header = {
+    hidden: {
+        opacity: 0,
+        x: '-100vw'
+    },
+    visible: {
+        opacity: 1,
+        x: '0',
+        transition: {
+            type: 'spring',
+            duration: 1,
+        }
+    }
+}
+export const text = {
+    hidden: {
+        opacity: 0,
+        x: '-100vw'
+    },
+    visible: {
+        opacity: 1,
+        x: '0',
+        transition: {
+            type: 'spring',
+            duration: 1,
+            delay: 0.2
+        }
+    }
+}
+export const button = {
+    hidden: {
+        opacity: 0,
+        x: '-100vw'
+    },
+    visible: {
+        opacity: 1,
+        x: '0',
+        originX: 0,
+        transition: {
+            type: 'spring',
+            duration: 1,
+            delay: 0.3
+        }
+    }
+}
+
 export const titleVariants ={
     hidden: {
         opacity: 0,
@@ -257,6 +304,22 @@ export const messageVariants = {
         transition: {
             delay: 1,
             duration: 0.5
+        }
+    }
+}
+
+// trainerCard animation
+export const trainerCardVariants = {
+    hidden: {
+        rotateY: 90,
+        opacity: 0
+    },
+    visible: {
+        rotateY: 0,
+        opacity: 1,
+        transition: {
+            delay: 1.25,
+            duratin: 5
         }
     }
 }

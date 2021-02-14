@@ -8,7 +8,8 @@ import { titleVariants_1, textVariants } from '../../../animations/animation'
 const Trainers = () => {
     const controls = useAnimation();
     const { ref, inView } = useInView();
-
+    
+    //animation control
     useEffect(() => {
         if (inView) {
           controls.start('visible');

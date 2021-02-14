@@ -6,16 +6,17 @@ import { Link } from 'react-scroll'
 const Navbar = ({isMenuOpen, handleOpen}) => {
     const [scroll, setScroll] = useState(false);
 
-    const  changeNav = () => {
-        if(window.scrollY >= 80) {
-            setScroll(true)
-        }
-        else {
-            setScroll(false)
-        }
-    }
-
+    // scroll észlelés
     useEffect(() => {
+        const  changeNav = () => {
+            if(window.scrollY >= 80) {
+                setScroll(true)
+            }
+            else {
+                setScroll(false)
+            }
+        }
+
         window.addEventListener('scroll',changeNav)
     },[])
     return (

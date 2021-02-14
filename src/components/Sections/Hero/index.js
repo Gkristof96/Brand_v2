@@ -1,52 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-scroll'
-
-const header = {
-    hidden: {
-        opacity: 0,
-        x: '-100vw'
-    },
-    visible: {
-        opacity: 1,
-        x: '0',
-        transition: {
-            type: 'spring',
-            duration: 1,
-        }
-    }
-}
-const text = {
-    hidden: {
-        opacity: 0,
-        x: '-100vw'
-    },
-    visible: {
-        opacity: 1,
-        x: '0',
-        transition: {
-            type: 'spring',
-            duration: 1,
-            delay: 0.2
-        }
-    }
-}
-const button = {
-    hidden: {
-        opacity: 0,
-        x: '-100vw'
-    },
-    visible: {
-        opacity: 1,
-        x: '0',
-        originX: 0,
-        transition: {
-            type: 'spring',
-            duration: 1,
-            delay: 0.3
-        }
-    }
-}
+import { header, button, text } from '../../../animations/animation'
 
 const Hero = () => {
     return (
