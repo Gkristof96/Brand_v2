@@ -34,7 +34,7 @@ const Services = ({data}) => {
                                 {serviceData.map((data,i) => ( <ListItem key={i} info={data.info} icon={data.icon} />))}
                             </motion.ul>
                         </div>
-                        <motion.img src='images/services.jpg' alt='services' 
+                        <motion.img src='images/services.webp' alt='services' 
                             variants={imageVariants}
                             initial='hidden'
                             animate={controls}

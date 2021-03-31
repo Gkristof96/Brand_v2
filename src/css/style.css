@@ -165,7 +165,7 @@
 }
 
 .navbar.open__menu li a:hover {
-  color: black;
+  color: #000;
 }
 
 @media screen and (max-width: 1230px) {
@@ -189,7 +189,7 @@
 .sidemenu {
   width: 100%;
   height: 100%;
-  background: black;
+  background: #000;
   position: fixed;
   z-index: 20;
   top: 80px;
@@ -239,7 +239,7 @@
 .hero {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(135deg, rgba(117, 117, 117, 0.75) 0%, rgba(117, 117, 117, 0.25) 100%), url("hero.jpg") center no-repeat;
+  background: linear-gradient(135deg, rgba(117, 117, 117, 0.75) 0%, rgba(117, 117, 117, 0.25) 100%), url("hero.webp") center no-repeat;
   background-size: cover;
   position: relative;
   display: -webkit-box;
@@ -254,7 +254,7 @@
 }
 
 .hero .container {
-  padding: 0 calc((100vw - 1200px) /2);
+  padding: 0 calc((100vw - 1200px) / 2);
   width: 100%;
   height: 50%;
   display: -ms-grid;
@@ -315,7 +315,7 @@
 }
 
 .hero .container .btn-container a {
-  background: #eb4e44;
+  background: #EB4E44;
   border-radius: 10px;
   padding: 15px 50px;
   color: #eee;
@@ -388,7 +388,7 @@
   font-weight: bold;
   font-size: clamp(1.3rem, 8vw, 2rem);
   line-height: 44px;
-  color: #000000;
+  color: #000;
   margin-bottom: 25px;
 }
 
@@ -419,7 +419,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 25px;
-  color: #000000;
+  color: #000;
 }
 
 .services .container .services-info ul li .icon {
@@ -444,7 +444,7 @@
 .trainer-card {
   max-width: 350px;
   max-height: 500px;
-  background: #FFFFFF;
+  background: #eee;
   border-radius: 5px;
   margin: 10px;
 }
@@ -463,7 +463,7 @@
   font-size: clamp(0.8rem, 5vw, 1.3rem);
   line-height: 29px;
   text-align: center;
-  color: #000000;
+  color: #000;
   margin-top: 10px;
   margin-bottom: 5px;
 }
@@ -536,7 +536,7 @@
   font-weight: normal;
   font-size: clamp(0.7rem, 5vw, 1rem);
   line-height: 22px;
-  color: #EEEEEE;
+  color: Color(light);
   margin-bottom: 50px;
 }
 
@@ -569,7 +569,7 @@
   width: 100%;
   height: auto;
   max-height: 350px;
-  background: #FFFFFF;
+  background: #eee;
   border: 5px solid #EB4E44;
   border-radius: 20px;
   display: -webkit-box;
@@ -592,7 +592,6 @@
   font-size: clamp(1.5rem, 5vw, 1.8rem);
   line-height: 44px;
   text-transform: uppercase;
-  color: #000000;
   margin-bottom: 5px;
 }
 
@@ -601,7 +600,7 @@
   font-weight: 600;
   font-size: clamp(0.8rem, 4vw, 1.3rem);
   line-height: 29px;
-  color: #000000;
+  color: #000;
 }
 
 .price-card p {
@@ -667,7 +666,7 @@
   font-weight: bold;
   font-size: clamp(1.3rem, 8vw, 2rem);
   line-height: 44px;
-  color: #000000;
+  color: #000;
   margin-bottom: 25px;
 }
 
@@ -713,7 +712,7 @@
       justify-self: center;
   width: 85%;
   min-height: 500px;
-  background: #EEEEEE;
+  background: #eee;
   border-radius: 5px;
   padding: 15px 30px;
 }
@@ -779,7 +778,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #000000;
+  color: #000;
 }
 
 .contact-card form .input-group input {
@@ -788,7 +787,7 @@
   border: none;
   outline: none;
   padding-left: 5px;
-  background: #FFFFFF;
+  background: #eee;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
@@ -800,7 +799,7 @@
   border: none;
   outline: none;
   padding-left: 5px;
-  background: #FFFFFF;
+  background: #eee;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
@@ -821,7 +820,7 @@
   cursor: pointer;
   -webkit-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-  color: #FFFFFF;
+  color: #eee;
 }
 
 .contact-card form button:hover {
@@ -879,7 +878,7 @@
 .modal .message-container {
   width: 400px;
   height: 200px;
-  background: white;
+  background: #eee;
   padding: 10px;
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
@@ -963,7 +962,7 @@
   font-weight: bold;
   font-size: clamp(1.3rem, 8vw, 2rem);
   line-height: 44px;
-  color: #EEEEEE;
+  color: #eee;
   margin-bottom: 25px;
 }
 
@@ -972,7 +971,7 @@
   font-weight: normal;
   font-size: clamp(0.7rem, 5vw, 1rem);
   line-height: 22px;
-  color: #EEEEEE;
+  color: #eee;
   margin-bottom: 25px;
   text-align: justify;
 }
@@ -992,7 +991,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #EEEEEE;
+  color: #eee;
   margin-bottom: 25px;
 }
 
@@ -1119,7 +1118,7 @@ footer .container .copyright {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  color: #757575;
+  color: #BDBDBD;
   position: relative;
 }
 
