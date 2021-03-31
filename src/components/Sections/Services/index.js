@@ -38,6 +38,7 @@ const Services = ({data}) => {
                             variants={imageVariants}
                             initial='hidden'
                             animate={controls}
+                            height='100%' width='100%' 
                         />
                 </div>
             </section>
