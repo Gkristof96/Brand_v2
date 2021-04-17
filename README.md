@@ -14,7 +14,6 @@ Egy képzeletbeli edzőterem legfontosabb információnak ismertetésére szolg�
 - Elérhetőségek leírása
 - Üzenet küldő űrlap
 
-
-
+## Teljes design
 
 ![screenshot](https://github.com/Gkristof96/Brand_v2/blob/master/Brand_mockup_v3.png)
