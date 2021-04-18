@@ -1,13 +1,13 @@
 .services {
   .container {
     display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 50px calc((100vw - 1200px) / 2);
+    grid-template-columns: 60% 40%;
 
     img {
-      height: 550px;
+      max-height: 550px;
       border-radius: 5px;
       justify-self: center;
+      align-self: center;
     }
 
     .services-info {

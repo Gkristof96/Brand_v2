@@ -48,7 +48,7 @@
 .navbar {
   width: 100%;
   height: 80px;
-  padding: 20px calc((100vw - 1200px)/2);
+  padding: 20px calc((100vw - 1400px) / 2);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -69,7 +69,7 @@
 }
 .navbar__logo h1 {
   margin-left: 0.5rem;
-  font-size: clamp(1rem,6vw,2rem);
+  font-size: clamp(1rem, 6vw, 2rem);
   font-weight: bold;
   color: #eee;
 }
@@ -88,7 +88,7 @@
   color: #eee;
   text-transform: uppercase;
   cursor: pointer;
-  font-size: clamp(0.6rem,1.8vw,1rem);
+  font-size: clamp(0.6rem, 1.8vw, 1rem);
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .navbar__menu li a:hover {
@@ -177,7 +177,7 @@
   align-items: center;
 }
 .hero .container {
-  padding: 0 calc((100vw - 1200px) / 2);
+  padding: 0 calc((100vw - 1400px) / 2);
   width: 100%;
   height: 50%;
   display: grid;
@@ -237,13 +237,13 @@
 }
 .services .container {
   display: grid;
-  grid-template-columns: 50% 50%;
-  padding: 50px calc((100vw - 1200px) / 2);
+  grid-template-columns: 60% 40%;
 }
 .services .container img {
-  height: 550px;
+  max-height: 550px;
   border-radius: 5px;
   justify-self: center;
+  align-self: center;
 }
 .services .container .services-info {
   display: flex;
@@ -351,7 +351,6 @@
 .trainers .container {
   display: grid;
   grid-template-rows: 2fr auto;
-  padding: 50px calc((100vw - 1200px) / 2);
   padding-bottom: 100px;
 }
 .trainers .container .title {
@@ -468,7 +467,6 @@
   display: grid;
   align-items: center;
   grid-template-rows: 2fr auto;
-  padding: 50px calc((100vw - 1200px) / 2);
 }
 .prices .container .texts h1 {
   font-style: normal;
@@ -668,7 +666,6 @@
 .contact .container {
   display: grid;
   grid-template-columns: 40% 60%;
-  padding: 50px calc((100vw - 1200px) / 2);
   padding-bottom: 100px;
 }
 .contact .container .contact-info {
@@ -738,7 +735,6 @@ footer {
   background: #bdbdbd;
 }
 footer .container {
-  padding: 0 calc((100vw - 1200px) /2);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 110px 40px;
@@ -876,6 +872,10 @@ section {
   position: relative;
   display: flex;
   align-items: center;
+}
+section .container {
+  width: 100%;
+  padding: 50px calc((100vw - 1400px) / 2);
 }
 
 /*# sourceMappingURL=style.css.map */

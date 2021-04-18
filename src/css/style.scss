@@ -53,4 +53,8 @@ section {
   position: relative;
   display: flex;
   align-items: center;
+  .container {
+    width: 100%;
+    padding: 50px calc((100vw - 1400px) / 2);
+  }
 }
