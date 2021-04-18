@@ -878,4 +878,10 @@ section .container {
   padding: 50px calc((100vw - 1400px) / 2);
 }
 
+@media screen and (max-width: 1450px) {
+  section .container {
+    padding: 50px 25px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
