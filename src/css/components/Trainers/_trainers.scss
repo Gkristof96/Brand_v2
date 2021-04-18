@@ -1,69 +1,67 @@
-@import './TrainerCard/trainercard';
+@import "./TrainerCard/trainercard";
 
 .trainers {
-    min-height: 100vh;
-    width: 100%;
-    background: color(dark);
-    position: relative;
-    .container {
-        display: grid;
-        grid-template-rows: 2fr auto;
-        padding: calc((100vh - 600px) /2) calc((100vw - 1200px) /2) calc((100vh - 600px)) calc((100vw - 1200px) /2);
+  background: color(dark);
+  .container {
+    display: grid;
+    grid-template-rows: 2fr auto;
+    padding: 50px calc((100vw - 1200px) / 2);
+    padding-bottom: 100px;
 
-        .title {
-            justify-self: center;
-            align-self: center;
-            text-align: center;
-            h1 {
-                position: relative;
-                padding-bottom: 10px;
-                margin-bottom: 15px;
+    .title {
+      justify-self: center;
+      align-self: center;
+      text-align: center;
+      h1 {
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
 
-                font-style: normal;
-                font-weight: bold;
-                font-size: clamp(1.3rem,8vw,2rem);
-                line-height: 44px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: clamp(1.3rem, 8vw, 2rem);
+        line-height: 44px;
 
-                color: color(light);
-            }
-            h1::after {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 50%;
-                height: 3px;
-                background: color(primary);
-            }
+        color: color(light);
+      }
+      h1::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 3px;
+        background: color(primary);
+      }
 
-            p {
-                font-style: normal;
-                font-weight: normal;
-                font-size: clamp(0.7rem,5vw,1rem);
-                line-height: 22px;
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: clamp(0.7rem, 5vw, 1rem);
+        line-height: 22px;
 
-                color: Color(light);
+        color: color(light);
 
-                margin-bottom: 50px;
-            }
-        }
-        .trainers-cards {
-            padding: 0 15px;
-            display: flex;
-            justify-content: space-around;
-        }
+        margin-bottom: 50px;
+      }
     }
+    .trainers-cards {
+      padding: 0 15px;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .trainers {
-        .container {
-            padding: 50px 25px;
-            .trainers-cards {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
+  .trainers {
+    .container {
+      padding: 50px 25px;
+      .trainers-cards {
+        flex-direction: column;
+        align-items: center;
+      }
     }
+  }
 }
