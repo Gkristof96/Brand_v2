@@ -1,18 +1,16 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { itemVariants } from '../../../../animations/animation'
+import React from "react";
+import { motion } from "framer-motion";
+import { itemVariants } from "../../../../animations/animation";
 
-const ListItem = ({info, icon}) => {
-    return (
-        <>
-            <motion.li
-                variants={itemVariants}
-            >
-            {icon}
-            {info}
-            </motion.li>
-        </>
-    )
-}
+const ListItem = ({ info, icon }) => {
+  return (
+    <>
+      <motion.li variants={itemVariants}>
+        {icon}
+        {info}
+      </motion.li>
+    </>
+  );
+};
 
-export default ListItem
+export default ListItem;
