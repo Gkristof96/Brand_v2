@@ -4,7 +4,7 @@
     grid-template-columns: 60% 40%;
 
     img {
-      max-height: 550px;
+      height: clamp(400px, 65vh, 550px);
       border-radius: 5px;
       justify-self: center;
       align-self: center;

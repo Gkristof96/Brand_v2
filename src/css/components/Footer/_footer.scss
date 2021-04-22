@@ -5,6 +5,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 110px 40px;
+    padding: 0 calc((100vw - 1400px) / 2);
 
     .logo {
       align-self: center;
@@ -87,10 +88,10 @@ footer {
   }
 }
 
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 1460px) {
   footer {
     .container {
-      padding: 0 15px;
+      padding: 0 50px;
     }
   }
 }

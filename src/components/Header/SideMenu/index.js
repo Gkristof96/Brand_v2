@@ -15,6 +15,7 @@ const SideMenu = ({ isMenuOpen, handleOpen }) => {
               spy={true}
               exact="true"
               to={data.path}
+              offset={-60}
             >
               {data.title}
             </Link>

@@ -41,7 +41,7 @@ const Navbar = ({ isMenuOpen, handleOpen }) => {
                 spy={true}
                 exact="true"
                 to={data.path}
-                offset={-80}
+                offset={-60}
               >
                 {data.title}
               </Link>
